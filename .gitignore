@@ -1,0 +1,61 @@
+# IntelliJ project files
+.idea
+*.iml
+*.iws
+*.ipr
+
+# IntelliJ
+gen
+out
+target
+
+/.apt_generated/
+/.classpath
+/.factorypath
+/.springBeans
+
+
+
+## Plugin-specific files:
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+
+
+
+
+
+
+#eclipse ignore
+.metadata
+.settings
+**/.classpath
+
+#package file
+*.class
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#maven ignore
+target
+build
+
+
+# temp file
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+.pmd
+
+# system ignore
+Thumbs.db
+RemoteSystemsTempFiles
