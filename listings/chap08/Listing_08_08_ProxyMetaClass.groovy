@@ -14,11 +14,22 @@ proxyMetaClass.interceptor = tracer
 InspectMe inspectMe = new InspectMe()
 inspectMe.metaClass = proxyMetaClass  //#2
 
-assert 1 == inspectMe.outer()         //#3
+proxyMetaClass.use(inspectMe){
+    assert 1 == inspectMe.outer()
 
-assert "\n" + tracer.writer.toString() == """
+    assert "\n" + tracer.writer.toString() == """
 before InspectMe.outer()
   before InspectMe.inner()
   after  InspectMe.inner()
 after  InspectMe.outer()
 """
+}
+
+//assert 1 == inspectMe.outer()         //#3
+//
+//assert "\n" + tracer.writer.toString() == """
+//before InspectMe.outer()
+//  before InspectMe.inner()
+//  after  InspectMe.inner()
+//after  InspectMe.outer()
+//"""

@@ -6,3 +6,5 @@ list.with {
     add 2
     assert delegate == expected
 }
+
+Closure

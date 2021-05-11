@@ -16,8 +16,16 @@ assert obj.properties.keySet() == new HashSet(keys)
 assert 1 == obj.properties['first']             //|#3
 assert 1 == obj.properties.first                //|#3
 
+//Added by me 2021-05-8
+println "obj.properties['first']:" + obj.properties['first']
+println "obj.properties.first:" + obj.properties.first
+
 assert 1 == obj.first                           //|#4
 assert 1 == obj['first']    // getAt('first')   //|#4
+
+//Added by me 2021-05-8
+println "obj.first:" + obj.first
+println "obj['first']:" + obj['first']
 
 def one = 'first'
 def two = 'second'
@@ -29,3 +37,13 @@ assert obj.dump() =~ 'first=2'                  //#6
 //#4 Direct access
 //#5 Dynamic assignment
 //#6 Field introspection
+
+//Added by me 2021-05-8
+println obj.hasProperty('first')
+println obj.respondsTo('myMethod')
+println obj.properties
+println obj.properties.keySet()
+
+println "obj.dump():\n" + obj.dump()
+
+

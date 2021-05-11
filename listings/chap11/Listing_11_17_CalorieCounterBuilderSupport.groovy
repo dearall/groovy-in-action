@@ -67,3 +67,6 @@ assert lunch.calories == 604.5
 //#1 Handle cases like crust('thin')
 //#2 Check consistency between child and parent
 //#3 Handle cases like appetizer { wings() }
+
+//Added by me 2021-05-8
+println lunch.calories

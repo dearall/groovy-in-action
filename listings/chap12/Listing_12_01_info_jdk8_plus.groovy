@@ -7,3 +7,8 @@ assert newline.dump() ==
  hash=10>'''
 
 assert newline.inspect() == /'\n'/
+
+//Added by me 2021-05-8
+println newline.toString()
+println newline.dump()
+println newline.inspect()

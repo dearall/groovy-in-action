@@ -16,9 +16,17 @@ def politicians = [
 
 def sorted = politicians.toSorted()                    //#2
 assert sorted*.initials() == ['GWB', 'MHT']
+
+//Added by me 2021-05-02
+println sorted*.initials()
+
 def byInitial = Politician.comparatorByInitial()       //#3
 sorted = politicians.toSorted(byInitial)               //#4
 assert sorted*.initials() == ['MHT', 'GWB']
+
+//Added by me 2021-05-02
+println sorted*.initials()
+
 //#1 Sorts by last then initial
 //#2 Performs default sort
 //#3 Autogenerates comparator based on initial

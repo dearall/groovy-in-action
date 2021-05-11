@@ -15,6 +15,9 @@ new Calc().with {
   assert sum(4, 4) == 8
   assert sum(3, 4) == 7                                //#4
   assert log.join(' ') == '3+4 4+4'                    //#5
+
+  //Added by me 2021-05-06
+  println log.join(' ')
 }
 //#1 Enable memoization by annotating a method
 //#2 Log all calculations

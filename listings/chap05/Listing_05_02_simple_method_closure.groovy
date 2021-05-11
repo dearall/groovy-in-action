@@ -19,3 +19,7 @@ assert 'short'  == words.find (filter5.&sizeUpTo)      //#4
 //#2 Method closure assignment
 //#3 Calling with closure
 //#4 Passing a method closure directly
+
+//added by me 2021-05-01
+println words.find (sizeUpTo6)
+println words.find (filter5.&sizeUpTo)

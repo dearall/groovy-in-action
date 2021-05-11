@@ -14,3 +14,7 @@ assert fast * 2 < slow                                 //#5
 //#3 Call closure the given number of times
 //#4 Some post-work
 //#5 Pass different closures for analysis
+
+//added by me 2021-05-01
+println slow
+println fast

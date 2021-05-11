@@ -21,3 +21,6 @@ shouldFail(ReadOnlyPropertyException) {
 //#3 Tuple constructor
 //#4 property getter
 //#5 appropriate equals and hashCode
+
+//Added by me 2021-05-05
+g2.lastName = 'DiCaprio'

@@ -13,3 +13,6 @@ def born = Date.parse('yyyy-MM-dd', '1966-05-27')
 def c1 = new Chef1(name: name, recipes: recipes, born: born)
 def c2 = c1.clone()
 assert c2.recipes == recipes
+
+//Added by me 2021-05-06
+println c2.recipes

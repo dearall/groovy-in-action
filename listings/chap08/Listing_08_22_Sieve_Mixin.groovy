@@ -14,3 +14,5 @@ class MinusSieve {
 ArrayList.mixin EvenSieve, MinusSieve
 
 assert (0..10).toList().no2 - 3 - 5 == [1, 7]
+println ((0..10).toList().no2)
+

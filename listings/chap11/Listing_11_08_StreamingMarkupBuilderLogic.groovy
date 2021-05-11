@@ -18,3 +18,6 @@ assert result.endsWith('</invoice></invoices>')                      //#|D
 //#B The root node must be included in the markup
 //#C Or writable.writeTo(file)
 //#D Checking start and end of long single line
+
+//Added by me 2021-05-8
+println result

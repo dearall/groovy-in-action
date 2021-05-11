@@ -38,3 +38,6 @@ invoices() {
 //#B Loop over 3 days
 //#1 Code for building a single invoice
 //#C Print to a StringWriter for testing
+
+//Added by me 2021-05-8
+println writer

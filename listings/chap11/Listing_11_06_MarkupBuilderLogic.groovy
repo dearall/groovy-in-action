@@ -34,3 +34,6 @@ assert "\n" + writer.toString() == """
   </invoice>
 </invoices>"""
 //#1 NEW: MarkupBuilder replaces NodeBuilder
+
+//Added by me 2021-05-8
+println writer
