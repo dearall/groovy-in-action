@@ -40,10 +40,10 @@ class DbUtil {
 
         sql.execute """
             CREATE TABLE `Athlete` (
-              `athleteId`   int NOT NULL AUTO_INCREMENT,
+              `athleteId`   INTEGER NOT NULL AUTO_INCREMENT,
               `firstname`   VARCHAR(64),
               `lastname`    VARCHAR(64),
-              `dateOfBirth` datetime,
+              `dateOfBirth` DATE,
               PRIMARY KEY (`athleteId`)
           ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
         """
