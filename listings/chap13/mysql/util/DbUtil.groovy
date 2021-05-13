@@ -1,20 +1,20 @@
 package util
 
+
 @Grapes([
         @Grab(group = 'mysql', module = 'mysql-connector-java', version = '8.0.24'),
         @Grab(group = 'com.mchange', module = 'c3p0', version = '0.9.5.5')
 ])
 
 @GrabConfig(systemClassLoader = true)
+import com.mchange.v2.c3p0.*
 
 import groovy.sql.Sql
-import com.mchange.v2.c3p0.*
 import groovy.transform.CompileStatic
-
-import javax.sql.DataSource;
+import groovy.transform.TypeCheckingMode
+import javax.sql.DataSource
 import java.util.logging.Level
 import java.util.logging.Logger
-import groovy.transform.*
 
 @CompileStatic
 class DbUtil {
