@@ -24,3 +24,5 @@ assert prettyPrint(json) == '''
     }
 }
 '''.trim()
+
+println prettyPrint(json)
