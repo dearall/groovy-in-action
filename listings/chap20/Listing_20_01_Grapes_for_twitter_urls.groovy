@@ -2,9 +2,10 @@
 import org.ccil.cowan.tagsoup.Parser
 
 def parser = new XmlParser(new Parser())
-def html = parser.parse("http://manning.com/koenig2")
+//def html = parser.parse("http://manning.com/koenig2")
+def html = parser.parse("https://www.manning.com/books/groovy-in-action-second-edition")
 
 def twitterUrls = html.body.'**'.a.@href.grep(~/.*twitter.*/)
 println twitterUrls.join("\n")
 
-assert 'http://www.twitter.com/mittie' in twitterUrls
+//assert 'http://www.twitter.com/mittie' in twitterUrls

@@ -25,11 +25,6 @@ target
 atlassian-ide-plugin.xml
 
 
-
-
-
-
-
 #eclipse ignore
 .metadata
 .settings
@@ -59,3 +54,10 @@ build
 # system ignore
 Thumbs.db
 RemoteSystemsTempFiles
+
+
+#grale ignore
+.gradle
+
+
+

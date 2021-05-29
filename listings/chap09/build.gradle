@@ -3,7 +3,8 @@ apply plugin:'groovy'
 apply plugin:'java'
 
 repositories {
-    mavenCentral()
+    //mavenCentral()
+    maven { url 'https://maven.aliyun.com/repository/central' }
 }
 
 dependencies {

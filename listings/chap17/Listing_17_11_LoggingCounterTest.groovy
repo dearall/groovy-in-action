@@ -13,6 +13,8 @@ class Listing_17_11_LoggingCounterTest extends GroovyLogTestCase {
       def bigger = count.biggerThan(MIXED_NUMBERS, -1)           //#C
       assertEquals(4, bigger)                                    //#D
     }
+
+    println log
     checkLogCount(1, "was equal", log)
     checkLogCount(4, "was bigger", log)
     checkLogCount(2, "was smaller", log)
