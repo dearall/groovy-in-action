@@ -49,3 +49,4 @@ The authors
 2. chap09 为 gradle 项目，使用 Gradle 5.6.4(自带 groovy v2.5.4) 编译，wrapper 任务同时使用 gradle 5.6.4 封装。
 3. chap13 数据库代码，新建 mysql 目录，相关数据库代码使用 mysql 重写，方便 Groovy 使用 mysql 数据库。
 4. 相关章节代码做了微调，以适应更新版本的 Groovy 和 Gradle
+5. 以上更改适用于 Java_8 分支，对 master 分支没有影响。
