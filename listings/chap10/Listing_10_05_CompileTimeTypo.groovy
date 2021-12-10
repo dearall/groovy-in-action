@@ -10,7 +10,7 @@ class Sleuth {
   String getFullName() { "$firstName $lastname" }        //#B
 }
 '''.trim()
-println e.message
+
 assert e.message.contains(
     '[Static type checking] - The variable [lastname] is undeclared')
 //#A Uppercase N in lastName

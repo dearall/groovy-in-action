@@ -15,3 +15,5 @@ def records = sql.dataSet('AthleteRecord').findAll {
 }
 def result = records.rows().collect { "$it.lastname $it.venue" }
 assert ['Khannouchi London', 'Khannouchi Chicago'] == result
+
+println "result: " + result

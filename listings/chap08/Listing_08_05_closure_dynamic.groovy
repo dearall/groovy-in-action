@@ -6,5 +6,8 @@ class DynamicPretender {
 }
 def one = new DynamicPretender()
 assert one.hello == 'accessed hello'
+println "one.hello: " + one.hello
+
 one.whatToDo     = { name -> name.size() }          //#3
 assert one.hello == 5
+println "one.hello: " + one.hello

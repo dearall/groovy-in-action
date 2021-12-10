@@ -20,3 +20,7 @@ assert query.sql == 'select * from Athlete where firstname >= ? and ' +
     'dateOfBirth > ? order by dateOfBirth DESC'
 assert query.parameters == ['P', '1970-01-01']
 assert query.rows()*.firstname == ['Paula', 'Ronaldo']
+
+println "query.sql:\n" + query.sql
+println "query.parameters: " + query.parameters
+println "query.rows()*.firstname: " + query.rows()*.firstname

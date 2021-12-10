@@ -5,3 +5,5 @@ class PropPretender {
 }
 def bounce = new PropPretender()
 assert bounce.hello == 'accessed hello'
+
+println "bounce.hello property: " + bounce.hello

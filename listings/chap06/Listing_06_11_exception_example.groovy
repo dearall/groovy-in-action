@@ -11,3 +11,4 @@ try {
     log << 'finally'
 }
 assert log.size() == 2
+println "log: " + log

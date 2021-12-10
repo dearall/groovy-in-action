@@ -16,5 +16,11 @@ assert greeting.count('o') == 3
 
 assert 'x'.padLeft(3)      == '  x'
 assert 'x'.padRight(3,'_') == 'x__'
+
+println 'x'.padRight(3,'_')
+
 assert 'x'.center(3)       == ' x '
 assert 'x' * 3             == 'xxx'
+
+// added
+println 'x' * 3

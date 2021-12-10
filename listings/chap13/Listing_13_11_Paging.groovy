@@ -6,3 +6,6 @@ DbUtil.populate(sql)
 def qry = 'SELECT * FROM Athlete'
 assert sql.rows(qry, 1, 2)*.lastname == ['Tergat', 'Khannouchi']
 assert sql.rows(qry, 3, 2)*.lastname == ['da Costa']
+
+println "sql.rows(qry, 1, 2)*.lastname: " + sql.rows(qry, 1, 2)*.lastname
+println "sql.rows(qry, 3, 2)*.lastname: " + sql.rows(qry, 3, 2)*.lastname

@@ -5,3 +5,5 @@ class Pretender {
 }
 def bounce = new Pretender()
 assert bounce.hello('world') == 'called hello with [world]'
+
+println "bounce.hello('world'): " + bounce.hello('world')

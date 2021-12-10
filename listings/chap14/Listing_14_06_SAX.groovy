@@ -28,7 +28,10 @@ new File('data/plan.xml').withInputStream { is ->
 assert handler.underway == [
     'use in current project'
 ]
+println "handler.underway: " + handler.underway
+
 assert handler.upcoming == [
     're-read DB chapter',
     'use DB/XML combination'
 ]
+println "handler.upcoming: " + handler.upcoming

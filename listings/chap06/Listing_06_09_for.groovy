@@ -49,3 +49,10 @@ assert store == myString                               //#7
 //#5 Implicit typing, over half-exclusive IntRange, braces
 //#6 Explicit typing, Java-style iterable value, braces
 //#7 Implicit typing, over string as collection, braces
+
+def matcher = '12xy3' =~ /\d/
+for (match in matcher) println match
+
+for (x in null) println 'This will not be printed!'
+
+for (x in new Object()) println "Printed once for object $x"

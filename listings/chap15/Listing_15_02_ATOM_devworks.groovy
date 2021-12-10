@@ -1,5 +1,6 @@
 //@Grab('org.codehaus.groovy:groovy-xml:2.2.0')
 import groovy.xml.Namespace
+import groovy.xml.XmlParser
 
 def url = 'http://www.ibm.com/developerworks/views/java/rss/' +
     'libraryview.jsp?feed_by=atom'

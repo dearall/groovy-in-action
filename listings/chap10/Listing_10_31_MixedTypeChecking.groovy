@@ -18,5 +18,5 @@ class HTMLExample {
     }
 }
 
-HTMLExample.page404()
+println HTMLExample.page404()
 //#A Type check only this method

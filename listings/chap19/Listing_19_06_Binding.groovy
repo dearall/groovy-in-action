@@ -13,3 +13,7 @@ assert binding.speed == 38                  //#5
 //#3 Calculation only involving binding variables
 //#4 Input variables unchanged
 //#5 Result also in binding
+
+println "binding.distance: " + binding.distance
+println "binding.time: " + binding.time
+println "binding.speed: " + binding.speed

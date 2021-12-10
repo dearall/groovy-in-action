@@ -15,8 +15,15 @@ class Jira {
 
 def jira = new Jira()
 def response = jira.query("GROOVY-5999")
+//println "response: " + response
+
 response.fields.with {
   assert summary == "Make @Delegate work with @DelegatesTo"
+  println "summary: " + summary
+
   assert fixVersions.name == ['2.1.1']
+  println "fixVersions.name: " + fixVersions.name
+
   assert resolutiondate.startsWith('2013-02-14')
+  println "resolutiondate: " + resolutiondate
 }

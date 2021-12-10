@@ -25,3 +25,4 @@ assert soldAt == [ulcDate]
 //#2 Root node creation
 //#3 Invoice creation
 //#4 GPath query
+println 'soldAt: ' + soldAt

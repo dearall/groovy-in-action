@@ -12,5 +12,6 @@ use Marshal, {
     assert "1".unMarshal() == 1
     [Integer.MIN_VALUE, -1, 0, Integer.MAX_VALUE].each {
         assert it.marshal().unMarshal() == it
+        println it.marshal().unMarshal()
     }
 }

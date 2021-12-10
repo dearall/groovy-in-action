@@ -32,7 +32,7 @@ def ce = shouldFail(CompilationFailedException) {
     System.exit(0)
   '''
 }
-println ce.message
+println "ce.message: " + ce.message
 //#1 Extend CompilationCustomizer
 //#2 Override call method
 //#3 Define visitor

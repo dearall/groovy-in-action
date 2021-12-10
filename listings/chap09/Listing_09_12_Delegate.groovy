@@ -10,7 +10,7 @@ class NoisySet2 {
 
     @Override
     boolean addAll(Collection items) {
-        items.each { println "adding $it" }
+        items.each { println "adding -- $it" }
         delegate.addAll(items)
     }
 }
@@ -19,3 +19,5 @@ Set ns = new NoisySet2()
 ns.add(1)
 ns.addAll([2, 3])
 assert ns.size() == 3
+
+println "ns.size(): " + ns.size()

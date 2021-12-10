@@ -70,3 +70,4 @@ assert lunch.calories == 604.5
 
 //Added by me 2021-05-8
 println lunch.calories
+println "linch: " + lunch

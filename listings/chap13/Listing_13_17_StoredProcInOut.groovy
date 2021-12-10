@@ -12,7 +12,7 @@ sql.execute '''
   END
 '''
 
-sql.call("{call CONCAT_NAME(?, ?, ?)}",
-    [Sql.VARCHAR, 'Paul', 'Tergat']) {
-  fullname -> assert fullname == 'Paul Tergat'
+sql.call("{call CONCAT_NAME(?, ?, ?)}", [Sql.VARCHAR, 'Paul', 'Tergat']) { fullname ->
+  assert fullname == 'Paul Tergat'
+  println "fullname: " + fullname
 }

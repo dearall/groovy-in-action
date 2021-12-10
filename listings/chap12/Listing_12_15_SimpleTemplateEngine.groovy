@@ -8,7 +8,7 @@ another month has passed and it's time for these
 your collaboration is very much appreciated
 '''
 
-def engine   = new groovy.text.SimpleTemplateEngine()       
+def engine   = new groovy.text.SimpleTemplateEngine()
 def template = engine.createTemplate(mailReminder)          
 def binding  = [                                            
     salutation: 'Mrs.',                                      //|#B
@@ -30,3 +30,5 @@ your collaboration is very much appreciated
 //#A Text of template containing placeholders
 //#B Variables to substitute in the template
 //#C Evaluate the template against the binding
+
+println 'template.make(binding): ' + template.make(binding).toString()

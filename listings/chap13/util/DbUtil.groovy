@@ -1,5 +1,13 @@
 package util
-@Grab('org.hsqldb:hsqldb:2.3.2')
+@Grapes([
+        //@Grab('org.hsqldb:hsqldb:2.3.2')
+        @Grab('org.hsqldb:hsqldb:2.6.1'),
+        //@Grab('org.hsqldb:hsqldb:2.6.1:javadoc'),
+        //@Grab('group=org.hsqldb;module=hsqldb;version=2.6.1;classifier=javadoc')
+        @Grab(group='org.hsqldb', module='hsqldb', version='2.6.1', classifier='javadoc'),
+        @Grab(group='org.hsqldb', module='hsqldb', version='2.6.1', classifier ='sources')
+])
+
 @GrabConfig(systemClassLoader=true)
 import groovy.sql.Sql
 

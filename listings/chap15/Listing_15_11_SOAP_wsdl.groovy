@@ -1,5 +1,6 @@
 //@Grab('org.codehaus.groovy:groovy-xml:2.2.0')
 import groovy.xml.Namespace
+import groovy.xml.XmlParser
 
 def url  = 'http://www.webservicex.net/CurrencyConvertor.asmx?WSDL'
 def wsdl = new Namespace('http://schemas.xmlsoap.org/wsdl/','wsdl')

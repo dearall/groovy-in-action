@@ -1,3 +1,5 @@
+import groovy.xml.XmlParser
+
 class UpdateChecker {
   static check(text) {
     def updated = new XmlParser().parseText(text)

@@ -1,6 +1,7 @@
-apply plugin:'idea'
-apply plugin:'groovy'
-apply plugin:'java'
+plugins {
+    id 'java'
+    id 'groovy'
+}
 
 repositories {
     //mavenCentral()
@@ -8,9 +9,9 @@ repositories {
 }
 
 dependencies {
-    compile     "org.codehaus.groovy:groovy-all:$groovyVersion"
-    testCompile "org.codehaus.groovy:groovy-all:$groovyVersion"
-    testCompile "junit:junit:4.12"
+    implementation     "org.codehaus.groovy:groovy-all:$groovyVersion"
+    testImplementation "org.codehaus.groovy:groovy-all:$groovyVersion"
+    testImplementation "junit:junit:4.13"
 }
 
 [compileGroovy, compileTestGroovy]*.options*.encoding = 'UTF-8'

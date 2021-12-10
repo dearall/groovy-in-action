@@ -6,6 +6,7 @@ def binding = new Binding(
     robot: new Robot(),
     *: Direction.values().collectEntries { [(it.name()): it] }   //#1
 )
+println "Direction.values(): " + Direction.values()
 
 def shell = new GroovyShell(this.class.classLoader, binding)
 shell.evaluate '''

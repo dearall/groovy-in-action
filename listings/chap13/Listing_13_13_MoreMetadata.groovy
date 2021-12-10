@@ -24,7 +24,8 @@ def dump2(sql, tablename) {
 
 def oldOut = System.out
 def baos = new ByteArrayOutputStream()
-System.setOut(new PrintStream(baos))
+def ps = new PrintStream(baos)
+System.setOut(ps)
 
 dump2(sql, 'Athlete')
 assert baos.toString().readLines()*.trim().join('\n') == '''\
@@ -35,8 +36,11 @@ ATHLETEID   FIRSTNAME   LASTNAME    DATEOFBIRTH
 1           Khalid      Khannouchi  1971-12-22
 2           Ronaldo     da Costa    1970-06-07\
 '''
+System.setOut(oldOut)
+println "baos.toString().readLines()*.trim().join('\\n'): \n" + baos.toString().readLines()*.trim().join('\n')
 
 baos.reset()
+System.setOut(ps)
 dump2(sql, 'Record')
 System.setOut(oldOut)
 assert baos.toString().readLines()*.trim().join('\n') == '''\
@@ -48,3 +52,4 @@ RECORDID    TIME        VENUE       WHENRUN     FKATHLETE
 2           7542        Chicago     1999-10-24  1
 3           7565        Berlin      1998-09-20  2\
 '''
+println "baos.toString().readLines()*.trim().join('\\n'): \n" + baos.toString().readLines()*.trim().join('\n')

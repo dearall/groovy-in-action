@@ -13,6 +13,8 @@ class Actor {
 
 def magneto = new Actor(firstName: 'Ian', lastName: 'McKellen')
 assert magneto.fullName == 'Ian McKellen'
+println "magneto.fullname: " + magneto.fullName
+
 magneto.makePeace()
 //#1 Checked
 //#2 Dynamic features allowed

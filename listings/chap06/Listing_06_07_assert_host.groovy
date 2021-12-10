@@ -13,3 +13,13 @@ def assertHost (candidate, regex, expected){
 // ... use host regex ...                                       //#B
 //#A Regular expression matching host
 //#B Trailing code goes here
+
+'http://a.b.c/bla'.eachMatch(host){ println it }
+
+
+
+
+input = new File('no-such-file.txt')
+assert input.exists(), "can not find file ${input.name}"
+assert input.canRead()
+println input.text

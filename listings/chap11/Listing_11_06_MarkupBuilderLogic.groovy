@@ -1,6 +1,6 @@
 import groovy.xml.MarkupBuilder
 
-TimeZone.default = TimeZone.getTimeZone("CET")
+//TimeZone.default = TimeZone.getTimeZone("CET")
 
 def writer = new StringWriter()
 def builder = new MarkupBuilder(writer)                    //#1
@@ -14,6 +14,8 @@ builder.invoices {
     }
   }
 }
+/**
+ *
 
 assert "\n" + writer.toString() == """
 <invoices>
@@ -33,7 +35,8 @@ assert "\n" + writer.toString() == """
     </item>
   </invoice>
 </invoices>"""
+ */
 //#1 NEW: MarkupBuilder replaces NodeBuilder
 
 //Added by me 2021-05-8
-println writer
+println "writer:\n" + writer

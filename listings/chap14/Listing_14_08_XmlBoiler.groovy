@@ -1,5 +1,6 @@
 //@Grab('org.codehaus.groovy:groovy-xml:2.2.0')
 import groovy.xml.MarkupBuilder
+import groovy.xml.XmlParser
 
 void numberfy(Node node) {                           //#1
   def atts = node.attributes()

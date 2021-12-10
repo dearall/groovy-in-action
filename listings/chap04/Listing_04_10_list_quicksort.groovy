@@ -11,10 +11,20 @@ assert quickSort([])                 == []
 assert quickSort([1])                == [1]
 assert quickSort([1,2])              == [1,2]
 assert quickSort([2,1])              == [1,2]
+println "quickSort([2,1]): " + quickSort([2,1])
+
 assert quickSort([3,1,2])            == [1,2,3]
+println "quickSort([3,1,2]): " + quickSort([3,1,2])
+
 assert quickSort([3,1,2,2])          == [1,2,2,3]
+println "quickSort([3,1,2,2]): " + quickSort([3,1,2,2])
+
 assert quickSort([1.0f,'a',10,null]) == [null,1.0f,10,'a'] //#2
+println "quickSort([1.0f,'a',10,null]): " + quickSort([1.0f,'a',10,null])
+
 assert quickSort('bca')              == 'abc'.toList()     //#3
+println "quickSort('bca'): " + quickSort('bca')
+
 //#1 Classify by pivot
 //#A Recursive calls
 //#2 Ducktyped items

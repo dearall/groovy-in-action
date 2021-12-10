@@ -46,3 +46,5 @@ println()
 
 println context[1, 2]
 println context[3, 4]
+
+println "context: " + context

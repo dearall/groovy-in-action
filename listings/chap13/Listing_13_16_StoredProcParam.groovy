@@ -15,5 +15,6 @@ sql.execute '''
   END
 '''
 
-assert sql.firstRow("{? = call FULL_NAME(?)}",
-    ['Tergat'])[0] == 'Paul Tergat'
+assert sql.firstRow("{? = call FULL_NAME(?)}", ['Tergat'])[0] == 'Paul Tergat'
+
+println sql.firstRow("{? = call FULL_NAME(?)}", ['Tergat'])[0]

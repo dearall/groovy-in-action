@@ -17,7 +17,10 @@ sql.withBatch { stmt ->
 //FINE: Successfully executed batch with 2 command(s)
 
 assert sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num == 4
+println "sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num: " + sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num
+
 assert sql.firstRow('SELECT COUNT(*) as num FROM Record').num == 5
+println "sql.firstRow('SELECT COUNT(*) as num FROM Record').num: " + sql.firstRow('SELECT COUNT(*) as num FROM Record').num
 
 def qry = '''
   INSERT INTO Athlete (firstname, lastname, dateOfBirth)
@@ -35,3 +38,4 @@ sql.withBatch(3, qry) { ps ->
 //FINE: Successfully executed batch with 1 command(s)
 
 assert sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num == 8
+println "sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num: " + sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num

@@ -1,5 +1,6 @@
 //@Grab('org.codehaus.groovy:groovy-xml:2.2.0')
 import groovy.xml.StreamingMarkupBuilder
+import groovy.xml.XmlSlurper
 
 def taskStatus(task) {                                       //#1
   switch (task.@done.toInteger()) {

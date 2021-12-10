@@ -7,6 +7,8 @@ assert twister =~ /s.a/                                        //#1
 def finder = (twister =~ /s.a/)                                //#2
 assert finder instanceof java.util.regex.Matcher               //#2
 
+println 'find `=~` return type: '+finder.class.name
+
 // twister must contain only words delimited by single spaces
 assert twister ==~ /(\w+ \w+)*/                                //#A
 
@@ -14,14 +16,21 @@ def WORD = /\w+/
 matches = (twister ==~ /($WORD $WORD)*/)                       //#B
 assert matches instanceof java.lang.Boolean                    //#B
 
+println 'match `==~` return type: ' + matches.class.name
+
 assert !(twister ==~ /s.e/)                                    //#C
 
 def wordsByX = twister.replaceAll(WORD, 'x')
 assert wordsByX == 'x x x x x x x x x x'
 
+println wordsByX
+
 def words = twister.split(/ /)                                 //#D
 assert words.size() == 10
 assert words[0] == 'she'
+
+println 'string.split() return type: ' + words.class.name
+
 //#1 Regex find operator as usable in if
 //#2 Find expression evaluates to a matcher object
 //#A Regex match operator

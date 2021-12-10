@@ -9,4 +9,4 @@ def sherlock  = new Detective(firstName: 'Sherlock', lastName: 'Holmes')
 assert sherlock .toString() == 'Detective(Sherlock, Holmes)'
 
 //Added by me 2021-05-02
-println sherlock
+println 'sherlock .toString(): ' + sherlock .toString()

@@ -1,4 +1,5 @@
-TimeZone.default = TimeZone.getTimeZone("CET")                 //#A
+println TimeZone.getDefault ().getID()
+//TimeZone.default = TimeZone.getTimeZone("CET")                 //#A
 
 def builder = new NodeBuilder()
 def invoices = builder.invoices {
@@ -15,6 +16,8 @@ def invoices = builder.invoices {
 def writer = new StringWriter()
 invoices.print(new PrintWriter(writer))                        //#C
 
+/**
+ *
 assert writer.toString() == """\
 invoices() {
   invoice(date:Thu Jan 01 00:00:00 CET 2015) {
@@ -34,10 +37,23 @@ invoices() {
   }
 }
 """
+ */
+
 //#A Set timezone for consistent Date toString() values in test
 //#B Loop over 3 days
 //#1 Code for building a single invoice
 //#C Print to a StringWriter for testing
 
 //Added by me 2021-05-8
-println writer
+println '*******************'
+println "invoices.dump(): \n" + invoices.dump()
+println '*******************'
+println "invoices.inspect(): \n" + invoices.inspect()
+println '*******************'
+println "invoices class name: " + invoices.class.name
+println '*******************'
+println "invoices: \n" + invoices
+println '*******************'
+println "invoices.depthFirst()*.name(): \n" + invoices.depthFirst()*.name()
+println '*******************'
+println 'writer: \n' + writer

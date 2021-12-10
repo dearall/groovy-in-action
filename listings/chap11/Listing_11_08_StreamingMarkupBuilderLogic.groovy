@@ -1,4 +1,6 @@
-def builder = new groovy.xml.StreamingMarkupBuilder()
+import groovy.xml.StreamingMarkupBuilder
+
+def builder = new StreamingMarkupBuilder()
 def writable = builder.bind {                                        //#A
   invoices {                                                         //#B
     for (day in 1..3) {
@@ -20,4 +22,4 @@ assert result.endsWith('</invoice></invoices>')                      //#|D
 //#D Checking start and end of long single line
 
 //Added by me 2021-05-8
-println result
+println "result: \n" + result

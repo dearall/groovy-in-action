@@ -25,3 +25,4 @@ def namedOrdinalSuffix = '(?1.first,?1.last,?2.dob)'
 sql.execute insertPrefix + namedOrdinalSuffix, takahashi, takahashiExtra
 
 assert sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num == 7
+println "sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num: " + sql.firstRow('SELECT COUNT(*) as num FROM Athlete').num

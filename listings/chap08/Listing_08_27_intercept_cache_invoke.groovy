@@ -16,3 +16,7 @@ def data = [
 assert data.findByName('moon')     //#3
 assert data.findByName('sun')      //#4
 assert data.findByAu(1)
+
+println "data.findByName('moon'): " + data.findByName('moon')
+println "data.findByName('sun'): " + data.findByName('sun')
+println "data.findByAu(1): " + data.findByAu(1)

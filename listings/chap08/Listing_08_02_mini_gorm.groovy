@@ -1,7 +1,7 @@
 class MiniGorm {
     def db = []
     Object methodMissing(String name, Object args) {
-        println name
+        println "calling " + name + "(" + args +")"
         db.find { it[name.toLowerCase()-'findby'] == args[0] } //#1
     }
 }
@@ -13,3 +13,6 @@ people.db << dierk << paul
 
 assert people.findByFirst('Dierk') == dierk         //#3
 assert people.findByLast('King')   == paul
+
+println "people.findByFirst('Dierk'): " + people.findByFirst('Dierk')
+println "people.findByLast('King'): " + people.findByLast('King')

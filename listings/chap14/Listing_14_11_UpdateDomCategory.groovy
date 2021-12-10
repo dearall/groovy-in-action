@@ -28,3 +28,5 @@ use(DOMCategory) {
 }
 
 UpdateChecker.check(XmlUtil.serialize(plan))
+
+println "XmlUtil.serialize(plan):\n" + XmlUtil.serialize(plan)

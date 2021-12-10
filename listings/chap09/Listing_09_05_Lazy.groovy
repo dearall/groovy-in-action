@@ -1,8 +1,12 @@
 class Resource {                                      //#1
     private static alive = 0
     private static used = 0
-    Resource() { alive++ }
-    def use() { used++ }
+    Resource() {
+        alive++
+    }
+    def use() {
+        used++
+    }
     static stats() { "$alive alive, $used used" }
 }
 
@@ -15,14 +19,27 @@ class ResourceMain {
 
 new ResourceMain().with {
     assert Resource.stats() == '1 alive, 0 used'      //#6
+    println "Resource.stats(): " + Resource.stats()
+
     res2.use()
+    println "Resource.stats(): " + Resource.stats()
+
     res3.use()
+    println "Resource.stats(): " + Resource.stats()
+
     res4.use()
     assert Resource.stats() == '4 alive, 3 used'      //#7
+    println "Resource.stats(): " + Resource.stats()
+
     assert res4 instanceof Resource                   //#8
+    println "res4 instanceof Resource: " + (res4 instanceof Resource)
+
     def expected = 'res4=java.lang.ref.SoftReference'
     assert it.dump().contains(expected)               //#9
+    println "it.dump(): " + it.dump()
 }
+println "ResourceMain.res3: " + ResourceMain.res3
+
 //#1 Define Resource class with inbuilt statistics
 //#2 Declare one normal resource
 //#3 Declare one @Lazy resource

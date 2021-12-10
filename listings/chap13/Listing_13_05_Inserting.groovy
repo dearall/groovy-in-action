@@ -13,6 +13,7 @@ def keys = sql.executeInsert """
   VALUES (${data.first}, ${data.last}, ${data.birth})
 """                                                                   //#B
 assert keys[0] == [1]                                                 //#1
+println 'keys[0]: ' + keys[0]
 
 def insertSql = '''
   INSERT INTO Athlete (firstname, lastname, dateOfBirth)
@@ -22,6 +23,7 @@ def params = ['Ronaldo', 'da Costa', '1970-06-07']
 def keyColumnNames = ['ATHLETEID']
 keys = sql.executeInsert insertSql, params, keyColumnNames            //#C
 assert keys[0] == [ATHLETEID: 2]                                      //#2
+println 'keys[0]: ' + keys[0]
 
 sql.close()
 //#A Insert using plain statement

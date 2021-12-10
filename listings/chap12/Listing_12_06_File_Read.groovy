@@ -5,7 +5,7 @@ assert lines == example.readLines()
 
 //Added by me 2021-05-9
 println()
-println example.readLines()
+println "example.readLines(): \n" + example.readLines()
 
 example.eachLine {
   assert it.startsWith('line')

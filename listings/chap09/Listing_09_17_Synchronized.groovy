@@ -24,3 +24,5 @@ assert p1.getNumber('Number43') == '9876543'          //#C
 //#A Each thread adds a dummy phonebook entry
 //#B Await completion of 99 parallel threads
 //#C Check a sample number
+
+println "p1.getNumber('Number43'): " + p1.getNumber('Number43')

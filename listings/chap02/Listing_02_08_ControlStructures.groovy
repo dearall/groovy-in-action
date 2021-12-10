@@ -43,3 +43,31 @@ switch(3)  {                                           //#H
 //#F The for in list
 //#G The each method with a closure
 //#H Class switch
+
+if (false)
+    println 'false is `true`'
+else
+    println 'false is `false`'
+
+if (null) {
+    println 'null is true'
+}
+else {
+    println '`null` is false'
+}
+
+if('') {
+    println "'' is true"
+}
+else {
+    println "'' is false"
+}
+
+if ([]){
+    println '[] is true'
+}
+else
+    println '[] is false'
+
+// 查看当前系统字节码格式版本
+println System.getProperty('java.class.version')

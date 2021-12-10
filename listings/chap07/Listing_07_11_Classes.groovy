@@ -19,3 +19,4 @@ canoo.address.state   = 'Switzerland'
 
 assert canoo.dump()         =~ /ULC/
 assert canoo.address.dump() =~ /Basel/
+println "canoo.dump(): " + canoo.dump()

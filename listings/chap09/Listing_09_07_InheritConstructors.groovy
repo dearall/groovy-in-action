@@ -10,6 +10,9 @@ def pw2 = new MyPrintWriter('out2.txt', 'US-ASCII')    //#B
     it.close()
 }
 assert new File('out1.txt').text == new File('out2.txt').text
+println "new File('out1.txt').text:\n" + new File('out1.txt').text
+println "new File('out2.txt').text:\n" + new File('out2.txt').text
+
 ['out1.txt', 'out2.txt'].each{ new File(it).delete() }
 //#A File file variant
 //#B String fileName, String charset variant

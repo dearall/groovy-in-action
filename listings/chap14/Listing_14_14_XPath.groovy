@@ -29,3 +29,5 @@ Week No. 0
 Week No. 1
  planned 4 of 8
  done    0 of 4'''
+
+println "out.toString():\n" + out.toString()

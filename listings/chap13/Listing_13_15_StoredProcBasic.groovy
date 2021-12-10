@@ -24,3 +24,5 @@ assert result == [
     'Khannouchi London 2002-04-14',
     'Tergat Berlin 2003-09-28'
 ]
+
+println "result: " + result

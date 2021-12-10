@@ -10,3 +10,4 @@ class Car {
 def car = Car.new(make: 'Porsche', model: '911')
 
 assert car.toString() == 'Car(Porsche, 911)'
+println "car.toString(): " + car.toString()

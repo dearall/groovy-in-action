@@ -6,3 +6,7 @@ secondsPerYear.toString();               // invalid Java
 new Integer(secondsPerYear).toString();
 
 assert "abc" - "a" == "bc"               // invalid Java
+
+println "abc" - "a"
+
+println "abcabc" - "a"

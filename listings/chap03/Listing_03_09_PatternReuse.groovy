@@ -22,3 +22,6 @@ assert timeImplicit > timePredef * 2                   //#C
 //#A Explicit pattern construction
 //#B Apply pattern on a string
 //#C At least twice as fast (possibly 3–5 times)
+
+println 'timeImplicit: '+timeImplicit
+println 'timePredef: '+timePredef

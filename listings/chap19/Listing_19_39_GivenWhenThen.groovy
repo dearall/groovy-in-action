@@ -23,4 +23,5 @@ given {
   result = a + b
 } then {
   assert result == 3
+  println "result: " + result
 }

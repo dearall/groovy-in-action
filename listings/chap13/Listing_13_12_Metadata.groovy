@@ -43,3 +43,5 @@ assert baos.toString().readLines()*.trim().join('\n') == '''\
 //#1 Counts from 1
 //#2 Counts from 0 and possibly null
 //#3 Capture standard out
+
+println "baos.toString().readLines()*.trim(): \n" + baos.toString().readLines()*.trim().join('\n')

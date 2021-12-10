@@ -7,6 +7,8 @@ assert result == '56789'                               //#A
 assert 5 in 0..10                                      //#1
 assert (0..10).isCase(5)                               //#1
                                                        //#1
+println '(0..10).isCase(5): ' + (0..10).isCase(5)
+
 def age = 36                                           //#1
 switch(age){                                           //#1
     case 16..20 : insuranceRate = 0.05 ; break         //#1
@@ -15,6 +17,8 @@ switch(age){                                           //#1
     default: throw new IllegalArgumentException()      //#1
 }                                                      //#1
 assert insuranceRate == 0.06                           //#1
+
+println 'insuranceRate: ' + insuranceRate
                                                   
 def ages = [20, 36, 42, 56]                            //#2
 def midage = 21..50                                    //#2
@@ -22,3 +26,5 @@ assert ages.grep(midage) == [36, 42]                   //#2
 //#A Iterating over a range
 //#1 Ranges for classification
 //#2 Filtering with ranges
+
+println 'ages.grep(midage): '+ages.grep(midage)

@@ -5,3 +5,4 @@ canoo.name          = 'Canoo Engineering AG'
 canoo.product       = 'UltraLightClient (ULC)'
 
 assert canoo.dump() =~ /ULC/
+println "canoo.dump(): " + canoo.dump()

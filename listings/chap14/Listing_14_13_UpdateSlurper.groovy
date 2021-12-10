@@ -1,5 +1,6 @@
 //@Grab('org.codehaus.groovy:groovy-xml:2.2.0')
 import groovy.xml.XmlUtil
+import groovy.xml.XmlSlurper
 
 def plan = new XmlSlurper().parse(new File('data/plan.xml'))
 
@@ -20,3 +21,4 @@ plan.week[1].task[1] + {
 //}
 
 UpdateChecker.check(XmlUtil.serialize(plan))
+println "XmlUtil.serialize(plan):\n" + XmlUtil.serialize(plan)

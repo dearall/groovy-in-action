@@ -41,7 +41,10 @@ use (XMLStreamCategory) {
 assert underway == [
     'use in current project'
 ]
+println "underway: " + underway
+
 assert upcoming == [
     're-read DB chapter',
     'use DB/XML combination'
 ]
+println "upcoming: " + upcoming

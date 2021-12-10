@@ -17,6 +17,8 @@ def result = shell.evaluate '''                                     //#6
     }                                                               //#6
 '''                                                                 //#6
 assert result == "Alcohol allowed for John Doe"                     //#7
+println "result: " + result
+
 //#1 Populate binding with customer
 //#2 Config instance
 //#3 Define base script

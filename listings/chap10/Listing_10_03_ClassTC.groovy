@@ -11,3 +11,5 @@ class Sleuth {
 assert new Sleuth(firstName: 'Nancy',
                    lastName: 'Drew').fullName == 'Nancy Drew'
 //#A Class annotation
+println "new Sleuth(firstName: 'Nancy', lastName: 'Drew').fullName: \n" + new Sleuth(firstName: 'Nancy', lastName:
+        'Drew').fullName

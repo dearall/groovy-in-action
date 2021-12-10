@@ -93,3 +93,5 @@ lunch.count {
 }
 
 assert lunch.calories == 604.5
+
+println "lunch.calories: " + lunch.calories

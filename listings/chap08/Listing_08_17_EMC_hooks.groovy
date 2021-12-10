@@ -17,3 +17,5 @@ assert people == '''
     Paul,
     Hamlet,
     Jon'''
+
+println 'people: ' + people

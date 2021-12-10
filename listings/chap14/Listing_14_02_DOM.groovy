@@ -20,7 +20,9 @@ String info(node) {
 }
 
 assert info(plan) == 'element: plan'
+println "info(plan): " + info(plan)
 assert plan.childNodes.length == 5                              //#1
+println "plan.childNodes.length: " + plan.childNodes.length
 
 // what we'd have to do without groovy-xml DGM methods
 //def firstWeek = null
@@ -31,21 +33,27 @@ assert plan.childNodes.length == 5                              //#1
 
 def firstWeek = plan.childNodes.find { it.nodeName == 'week' }  //#2
 assert info(firstWeek) == 'element: week'
+println "info(firstWeek): " + info(firstWeek)
 
 def firstWeekCapacity = firstWeek.attributes.getNamedItem('capacity')
 assert info(firstWeekCapacity) == 'attribute: capacity=8'
+println "info(firstWeekCapacity): " + info(firstWeekCapacity)
 
 def firstTask = firstWeek.childNodes.item(1)                    //#3
 assert info(firstTask) == 'element: task'
+println "info(firstTask): " + info(firstTask)
 
 def firstTaskText = firstTask.childNodes.item(0)
 assert info(firstTaskText) == 'text: easy'
+println "info(firstTaskText): " + info(firstTaskText)
 
 def firstTaskTitle = firstTask.attributes.getNamedItem('title')
 assert info(firstTaskTitle) == 'attribute: title=read XML chapter'
+println "info(firstTaskTitle): " + info(firstTaskTitle)
 
 def firstTaskTitleText = firstTaskTitle.childNodes.item(0)
 assert info(firstTaskTitleText) == 'text: read XML chapter'
+println "info(firstTaskTitleText): " + info(firstTaskTitleText)
 //#1 Element and whitespace children visible
 //#2 Object iteration method
 //#3 Indexed access

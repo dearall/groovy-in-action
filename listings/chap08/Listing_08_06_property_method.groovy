@@ -14,3 +14,6 @@ class PropUser extends NoParens {       //#3
 def user = new PropUser()
 assert user.existingProperty
 assert user.toString() == user.toString //#4
+
+println "user.toString: " + user.toString
+println "user.toString(): " + user.toString()

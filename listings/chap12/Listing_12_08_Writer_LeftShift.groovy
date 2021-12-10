@@ -15,3 +15,4 @@ some String
 Thu Jan 01 01:00:00 CET 1970
 abc
 '''
+println "writer.toString(): " + writer.toString()

@@ -15,4 +15,5 @@ def c2 = c1.clone()
 assert c2.recipes == recipes
 
 //Added by me 2021-05-06
-println c2.recipes
+println 'c1.recipes: ' + c1.recipes
+println 'c2.recipes: ' + c2.recipes

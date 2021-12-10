@@ -33,3 +33,5 @@ after  InspectMe.outer()
 //  after  InspectMe.inner()
 //after  InspectMe.outer()
 //"""
+
+println "tracer.writer.toString(): \n" + tracer.writer.toString()

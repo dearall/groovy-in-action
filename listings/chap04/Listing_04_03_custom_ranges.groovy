@@ -36,3 +36,5 @@ assert worklog == 'Mon Tue Wed Thu Fri '
 //#A Allow all values
 //#1 Range bound methods
 //#B Working through the week
+
+println 'worklog: ' + worklog

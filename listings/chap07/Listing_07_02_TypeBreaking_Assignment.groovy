@@ -4,3 +4,6 @@ assert PI.size() == 4
 GroovyAssert.shouldFail(ClassCastException){
     Float areaOfCircleRadiusOne = PI
 }
+groovy.test.GroovyAssert.shouldFail(ClassCastException){
+    Float areaOfCircleRadiusOne = PI
+}

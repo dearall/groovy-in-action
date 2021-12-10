@@ -31,7 +31,9 @@ inputDir.traverse(
     postRoot     : true,
     sort         : sortByTypeThenName
 ) {it -> totalSize += it.size(); count++ }
+
 println log.join('\n')
+
 assert log.size() == 3
 assert log*.replaceAll(/\d+/, '*').join('\n') == '''
 Found * files in regina : * bytes

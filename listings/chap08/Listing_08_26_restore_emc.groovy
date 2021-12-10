@@ -9,6 +9,8 @@ String.metaClass {
 
 assert "abc".size()    == 6
 assert "abc".oldSize() == 3
+println '"abc".size(): ' + "abc".size()
+println '"abc".oldSize(): ' + "abc".oldSize()
 
 if (oldMetaClass.is(String.metaClass)){
     String.metaClass {                              //#3
@@ -20,3 +22,4 @@ if (oldMetaClass.is(String.metaClass)){
 }
 
 assert "abc".size() == 3
+println '"abc".size(): ' + "abc".size()

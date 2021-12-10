@@ -52,6 +52,7 @@ config.addCompilationCustomizers(imports, secure)
 def shell = new GroovyShell(config)
 def result = shell.evaluate('1+cos(PI/2)')                          //#9
 assert result == 1
+println "result: " + result
 //#1 Disable closures
 //#2 Disable methods
 //#3 Disable imports and static imports except lava.lang.Math

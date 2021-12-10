@@ -19,3 +19,4 @@ assert retrieved == objects
 //#A Clean up after ourselves
 //#B Serialize each object in the list in turn
 //#C Deserialize each object in turn
+println "retrieved: \n" + retrieved

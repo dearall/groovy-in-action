@@ -16,3 +16,4 @@ class City {
 def paris = City('Paris', '75000', Country('France'))
 
 assert paris.toString() == 'City(Paris, 75000, Country(France))'
+println "paris.toString(): " + paris.toString()

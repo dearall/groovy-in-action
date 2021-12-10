@@ -22,3 +22,5 @@ assert builder.toPrettyString().startsWith(                     //#3
 //#1 Pretended method can take collection and Closure
 //#2 Closure defines JSON for each item in collection
 //#4 Check the start of pretty output
+
+println "builder.toPrettyString(): " + builder.toPrettyString()

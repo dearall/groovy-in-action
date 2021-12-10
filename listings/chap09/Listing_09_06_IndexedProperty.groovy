@@ -12,6 +12,9 @@ new Author(name: 'Agatha Christie', books: books).with {
     books[0] = 'Murder on the Orient Express'            //#1
     setBooks(0, 'Death on the Nile')                     //#2
     assert getBooks(0) == 'Death on the Nile'            //#3
+
+    println "books:\n" + books
+    println "it.books:\n" + it.books
 }
 //#1 Groovy idiom for setting the first property
 //#2 JavaBean approach to setting a single element

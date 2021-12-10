@@ -19,3 +19,7 @@ assert  3 == multi (['list', 'of', 'values'])          //#2
 assert 14 == multi (6, 8)                              //#2
 //#1 Only a single closure is created
 //#2 Different implementations are called based on argument types
+
+println "multi ('string arg'): " + multi ('string arg')
+println "multi (['list', 'of', 'values']): " + multi (['list', 'of', 'values'])
+println "multi (6, 8): " + multi (6, 8)

@@ -44,3 +44,4 @@ assert [ulcDate.toString()] == searchDates
 //#1 Total for each line item
 //#2 Query of product names
 //#3 Query of invoice date
+this.class.methods.name.grep(~/get.*/).sort()

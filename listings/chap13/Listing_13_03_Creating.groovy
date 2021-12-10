@@ -1,4 +1,4 @@
-@Grab('org.hsqldb:hsqldb:2.3.2')
+@Grab('org.hsqldb:hsqldb:2.6.1')
 @GrabConfig(systemClassLoader=true)
 //////////////////////////////////
 

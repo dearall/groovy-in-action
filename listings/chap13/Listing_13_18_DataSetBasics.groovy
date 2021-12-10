@@ -8,6 +8,7 @@ def athletes = sql.dataSet('Athlete')
 def result = []
 athletes.each { result << it.firstname }                              //#1
 assert result == ['Paul', 'Khalid', 'Ronaldo']                        //#A
+println "result: " + result
 
 athletes.add(
     firstname: 'Paula',
@@ -17,6 +18,7 @@ athletes.add(
 
 result = athletes.rows().collect { it.firstname }                     //#2
 assert result == ['Paul', 'Khalid', 'Ronaldo', 'Paula']               //#B
+println "result: " + result
 //#A Initially we have our three sample athletes
 //#B Confirm we now have four athletes
 //#1 Treating a SQL table like a list of map-like rows

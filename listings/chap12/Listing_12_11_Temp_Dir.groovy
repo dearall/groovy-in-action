@@ -4,8 +4,10 @@ assert tempDir.directorySize() == 0                          //#B
 
 File source = new File(tempDir, 'input.dat')                 //#C
 source.bytes = "hello world".bytes
+println "source.bytes: " + source.readLines().join('')
 
 assert tempDir.directorySize() == 11                         //#D
+println "tempDir.directorySize(): " + tempDir.directorySize()
 
 File destination = new File(tempDir, 'output.dat')
 
@@ -16,6 +18,7 @@ destination.withDataOutputStream { os->                      //#E
 }
 
 assert tempDir.directorySize() == 22
+println "tempDir.directorySize(): " + tempDir.directorySize()
 
 tempDir.deleteDir()                                         //#F
 //#A Create a temporary directory

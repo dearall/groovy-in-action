@@ -45,6 +45,8 @@ def term3 = shell.evaluate '''
 '''
 
 assert term3.toString() == 'Mult(Value(a), Add(Value(b), Value(c)))'
+println "term3.toString(): " + term3.toString()
+
 //#1 Pass annotation and parameters to customizer
 //#2 Pass config to GroovyShell
 //#3 Implicit Newify
